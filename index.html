@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cariad by Llinos | Trusted Local Pet Care in & Around Carmarthen</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter, Playfair Display & Great Vibes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F7F2EC',
+                        burgundy: '#6E2C33',
+                        blush: '#E8B4B8',
+                        blushLight: '#F3D1D4',
+                        sage: '#556B55',
+                        sageLight: '#E2E8E2',
+                        darkText: '#2C2C2C'
+                    },
+                    fontFamily: {
+                        script: ['"Great Vibes"', 'cursive'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .script-font {
+            font-family: 'Great Vibes', cursive;
+        }
+        body {
+            background-color: #F7F2EC;
+            color: #2C2C2C;
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-pattern {
+            background-color: #F7F2EC;
+            background-image: radial-gradient(#E8B4B8 0.75px, transparent 0.75px), radial-gradient(#E8B4B8 0.75px, #F7F2EC 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+    </style>
+</head>
+<body class="bg-cream text-darkText antialiased selection:bg-blush selection:text-burgundy">
+
+    <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur-md border-b border-blush/30 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center space-x-2 group">
+                <span class="script-font text-3xl sm:text-4xl text-burgundy font-bold group-hover:scale-105 transition-transform">Cariad <span class="text-xl sm:text-2xl font-normal">by Llinos</span> ♥</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide uppercase text-burgundy">
+                <a href="#home" class="hover:text-sage transition-colors">Home</a>
+                <a href="#services" class="hover:text-sage transition-colors">Services</a>
+                <a href="#extras" class="hover:text-sage transition-colors">Extras</a>
+                <a href="#about" class="hover:text-sage transition-colors">About Us</a>
+                <a href="#gallery" class="hover:text-sage transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-sage transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="tel:07584954185" class="hidden sm:inline-flex items-center bg-burgundy text-white px-4 py-2.5 rounded-full font-medium text-sm shadow-md hover:bg-burgundy/90 transition-all transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-phone mr-2 text-xs"></i> 07584 954185
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-burgundy p-2 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-b border-blush/40 px-6 py-4 space-y-3 font-medium text-burgundy shadow-lg">
+            <a href="#home" class="block py-2 hover:text-sage transition-colors">Home</a>
+            <a href="#services" class="block py-2 hover:text-sage transition-colors">Services</a>
+            <a href="#extras" class="block py-2 hover:text-sage transition-colors">Extras</a>
+            <a href="#about" class="block py-2 hover:text-sage transition-colors">About Us</a>
+            <a href="#gallery" class="block py-2 hover:text-sage transition-colors">Gallery</a>
+            <a href="#contact" class="block py-2 hover:text-sage transition-colors">Contact</a>
+            <div class="pt-2">
+                <a href="tel:07584954185" class="block text-center bg-burgundy text-white py-2.5 rounded-full font-medium text-sm shadow">
+                    <i class="fa-solid fa-phone mr-2"></i> Call 07584 954185
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-pattern pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-blush/30 text-burgundy px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-wider border border-blush/50">
+                        <i class="fa-solid fa-paw text-burgundy"></i>
+                        <span>Trusted Local Pet Care in & Around Carmarthen</span>
+                    </div>
+
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-burgundy leading-tight">
+                        Cariad <span class="block font-normal script-font text-6xl sm:text-7xl lg:text-8xl text-burgundy mt-1">by Llinos ♥</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-darkText/80 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Friendly, reliable pet care from someone who genuinely loves animals — helping your pets feel happy, comfortable and cared for while you're away.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto bg-burgundy text-white px-8 py-3.5 rounded-full font-semibold shadow-lg hover:bg-burgundy/90 transition-all text-center transform hover:-translate-y-0.5">
+                            Get in Touch ♥
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto bg-sage text-white px-8 py-3.5 rounded-full font-semibold shadow-lg hover:bg-sage/90 transition-all text-center">
+                            View Our Services
+                        </a>
+                    </div>
+
+                    <div class="pt-4 flex items-center justify-center lg:justify-start space-x-2 text-burgundy font-medium text-sm">
+                        <span>Dog Walking</span>
+                        <span>♥</span>
+                        <span>Cat Care</span>
+                        <span>♥</span>
+                        <span>Puppy Checks</span>
+                    </div>
+                </div>
+
+                <!-- Right visual element using provided repository photos -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-blush/50 to-sage/30 rounded-3xl blur-2xl opacity-70 -z-10 animate-pulse"></div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-4">
+                                <div class="overflow-hidden rounded-2xl shadow-xl border-4 border-white bg-white">
+                                    <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/orangedog.jpg" alt="Happy Dog Walking" class="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/E8B4B8/6E2C33?text=Cariad+Dog'">
+                                </div>
+                                <div class="overflow-hidden rounded-2xl shadow-xl border-4 border-white bg-white">
+                                    <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/cat1.jpg" alt="Cozy Cat Care" class="w-full h-36 sm:h-44 object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/556B55/ffffff?text=Cariad+Cat'">
+                                </div>
+                            </div>
+                            <div class="space-y-4 pt-8">
+                                <div class="overflow-hidden rounded-2xl shadow-xl border-4 border-white bg-white">
+                                    <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/visit.jpg" alt="Puppy Welfare Visit" class="w-full h-36 sm:h-44 object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/E8B4B8/6E2C33?text=Puppy+Care'">
+                                </div>
+                                <div class="bg-burgundy text-white p-6 rounded-2xl shadow-xl text-center flex flex-col justify-center items-center">
+                                    <span class="script-font text-3xl mb-1">Happy Pets</span>
+                                    <span class="text-xs uppercase tracking-widest text-blushLight font-semibold">Happier People ♥</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md px-6 py-3 rounded-2xl shadow-lg border border-blush/40 flex items-center space-x-3">
+                            <div class="bg-blush/30 text-burgundy p-2.5 rounded-xl">
+                                <i class="fa-solid fa-heart text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-medium">Fully Insured & Trusted</p>
+                                <p class="text-sm font-bold text-burgundy">Carmarthen Local</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-burgundy text-white py-12 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <h2 class="text-3xl sm:text-4xl font-serif italic text-blushLight">"Loving Care for Every Kind of Pet"</h2>
+            <p class="text-white/90 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
+                Whether your dog needs a good walk, your cat needs some company, or your puppy needs a little extra attention during the day, Cariad by Llinos is here to help. Local, caring and personal pet care for families in Carmarthen and surrounding areas.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <span class="script-font text-4xl text-burgundy">Our Professional Services</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-darkText">Tailored Care for Your Furry Family</h2>
+            <div class="w-20 h-1 bg-blush mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- Dog Walking Service -->
+            <div class="bg-sageLight/50 rounded-3xl p-6 sm:p-8 border border-sage/20 shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+                <div class="space-y-6">
+                    <div class="overflow-hidden rounded-2xl shadow-md bg-white">
+                        <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/orangedog.jpg" alt="Dog Walking" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/600x400/556B55/ffffff?text=Dog+Walking'">
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs uppercase tracking-widest font-bold text-sage mb-1">🐾 Dog Walking</div>
+                        <h3 class="text-2xl font-bold text-darkText mb-1">Happy Dogs. Happier Days.</h3>
+                        <p class="text-xs text-gray-600 font-medium">Give your dog some exercise, attention and plenty of fuss.</p>
+                    </div>
+
+                    <div class="space-y-3 border-t border-b border-sage/20 py-4">
+                        <div class="flex justify-between items-center text-sm font-semibold">
+                            <span class="text-darkText">30-Minute Walk</span>
+                            <span class="text-burgundy text-lg font-bold">£10</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm font-semibold">
+                            <span class="text-darkText">1-Hour Walk</span>
+                            <span class="text-burgundy text-lg font-bold">£15</span>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-darkText/80 leading-relaxed text-center">
+                        Every walk is about more than exercise — it's time for your dog to explore, play, enjoy some fresh air and receive plenty of care.
+                    </p>
+                </div>
+
+                <div class="pt-8">
+                    <a href="#contact" class="block w-full text-center bg-sage text-white py-3 rounded-xl font-semibold shadow hover:bg-sage/90 transition-all">
+                        Book a Dog Walk ♥
+                    </a>
+                </div>
+            </div>
+
+            <!-- Puppy Welfare Checks Service -->
+            <div class="bg-blush/30 rounded-3xl p-6 sm:p-8 border border-blush/50 shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+                <div class="space-y-6">
+                    <div class="overflow-hidden rounded-2xl shadow-md bg-white">
+                        <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/visit.jpg" alt="Puppy Welfare Checks" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/600x400/E8B4B8/6E2C33?text=Puppy+Checks'">
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs uppercase tracking-widest font-bold text-burgundy mb-1">🐾 Puppy Welfare Checks</div>
+                        <h3 class="text-2xl font-bold text-darkText mb-1">A Little Care for a Brighter Start</h3>
+                        <p class="text-xs text-gray-600 font-medium">Young puppies need reassurance, company and regular attention.</p>
+                    </div>
+
+                    <div class="space-y-3 border-t border-b border-blush/40 py-4">
+                        <div class="flex justify-between items-center text-sm font-semibold">
+                            <span class="text-darkText">30-Minute Visit</span>
+                            <span class="text-burgundy text-lg font-bold">£10</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm font-semibold">
+                            <span class="text-darkText">45-Minute Visit</span>
+                            <span class="text-burgundy text-lg font-bold">£13</span>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-darkText/80 leading-relaxed text-center">
+                        Our welfare visits include feeding, a toilet break, playtime, cuddles and general companionship while you're away.
+                    </p>
+                </div>
+
+                <div class="pt-8">
+                    <a href="#contact" class="block w-full text-center bg-burgundy text-white py-3 rounded-xl font-semibold shadow hover:bg-burgundy/90 transition-all">
+                        Enquire About Puppy Care ♥
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cat Care Service -->
+            <div class="bg-sageLight/50 rounded-3xl p-6 sm:p-8 border border-sage/20 shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+                <div class="space-y-6">
+                    <div class="overflow-hidden rounded-2xl shadow-md bg-white">
+                        <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/cat1.jpg" alt="Cat Care" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/600x400/556B55/ffffff?text=Cat+Care'">
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs uppercase tracking-widest font-bold text-sage mb-1">🐾 Cat Care</div>
+                        <h3 class="text-2xl font-bold text-darkText mb-1">Happy Cats in a Happy Home</h3>
+                        <p class="text-xs text-gray-600 font-medium">Cats often feel happiest in their own familiar surroundings.</p>
+                    </div>
+
+                    <div class="space-y-3 border-t border-b border-sage/20 py-4">
+                        <div class="flex justify-between items-center text-sm font-semibold">
+                            <span class="text-darkText">30-Minute Visit</span>
+                            <span class="text-burgundy text-lg font-bold">£10</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm font-semibold">
+                            <span class="text-darkText">45-Minute Visit</span>
+                            <span class="text-burgundy text-lg font-bold">£13</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm font-medium">
+                            <span class="text-darkText/80 text-xs">Additional Cat (same household)</span>
+                            <span class="text-burgundy font-bold">£2</span>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-darkText/80 leading-relaxed text-center">
+                        Including fresh food and water, clean litter tray, playtime and, of course, plenty of fuss.
+                    </p>
+                </div>
+
+                <div class="pt-8">
+                    <a href="#contact" class="block w-full text-center bg-sage text-white py-3 rounded-xl font-semibold shadow hover:bg-sage/90 transition-all">
+                        Arrange Cat Care ♥
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="extras" class="py-16 bg-blush/15 border-y border-blush/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+                <span class="script-font text-3xl text-burgundy">Flexible Add-ons</span>
+                <h2 class="text-3xl font-bold text-darkText">A Little Extra Cariad</h2>
+                <p class="text-gray-600 text-sm">Sometimes it's the little things that make pet care easier.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 text-center flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div class="text-burgundy text-2xl mb-3">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText text-sm mb-1">Key Collection / Return</h4>
+                        <p class="text-xs text-gray-500 mb-3">Simple and convenient access arrangements.</p>
+                    </div>
+                    <div class="text-burgundy font-bold text-lg">£3</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 text-center flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div class="text-burgundy text-2xl mb-3">
+                        <i class="fa-solid fa-pills"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText text-sm mb-1">Medication Administration</h4>
+                        <p class="text-xs text-gray-500 mb-3">Where appropriate and agreed in advance.</p>
+                    </div>
+                    <div class="text-burgundy font-bold text-lg">From £2</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 text-center flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div class="text-burgundy text-2xl mb-3">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText text-sm mb-1">Bank Holidays</h4>
+                        <p class="text-xs text-gray-500 mb-3">Holiday visit supplement.</p>
+                    </div>
+                    <div class="text-burgundy font-bold text-lg">+£3 <span class="text-xs font-normal">per visit</span></div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 text-center flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div class="text-burgundy text-2xl mb-3">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText text-sm mb-1">Christmas & New Year</h4>
+                        <p class="text-xs text-gray-500 mb-3">Festive season care.</p>
+                    </div>
+                    <div class="text-burgundy font-bold text-lg">+£5 <span class="text-xs font-normal">per visit</span></div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 text-center flex flex-col justify-between hover:shadow-md transition-shadow sm:col-span-2 lg:col-span-1">
+                    <div class="text-burgundy text-2xl mb-3">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText text-sm mb-1">Additional Travel</h4>
+                        <p class="text-xs text-gray-500 mb-3">Small travel charge outside our 10-mile service area.</p>
+                    </div>
+                    <div class="text-xs font-semibold text-burgundy">Flexible rates</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-6">
+                <span class="script-font text-4xl text-burgundy">Why Choose Cariad?</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-darkText">Caring for your pets like they're my own. ♥️</h2>
+                <p class="text-darkText/80 leading-relaxed font-light">
+                    Your pets aren't just another booking. They're part of your family — and that's how they'll be treated. Cariad means love in Welsh — and that's exactly what the business is built around.
+                </p>
+                <p class="text-darkText/80 leading-relaxed font-light">
+                    I believe pets deserve more than simply being checked on. They deserve attention, companionship, play, affection and care that makes them feel safe and happy.
+                </p>
+                <div class="pt-2">
+                    <a href="#contact" class="inline-block bg-burgundy text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-burgundy/90 transition-all">
+                        Meet Llinos ♥
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 flex items-start space-x-4">
+                    <div class="bg-blush/30 text-burgundy p-3 rounded-xl text-xl shrink-0">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText mb-1">Reliable & Trustworthy</h4>
+                        <p class="text-xs text-gray-600">Dependable care you can feel comfortable leaving your pets with.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 flex items-start space-x-4">
+                    <div class="bg-blush/30 text-burgundy p-3 rounded-xl text-xl shrink-0">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText mb-1">Experienced Animal Lover</h4>
+                        <p class="text-xs text-gray-600">A genuine love for cats, dogs and the companionship they bring.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 flex items-start space-x-4">
+                    <div class="bg-blush/30 text-burgundy p-3 rounded-xl text-xl shrink-0">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText mb-1">Local to Carmarthen</h4>
+                        <p class="text-xs text-gray-600">Serving Carmarthen and surrounding areas (approx. 10 miles).</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 flex items-start space-x-4">
+                    <div class="bg-blush/30 text-burgundy p-3 rounded-xl text-xl shrink-0">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText mb-1">Fully Insured</h4>
+                        <p class="text-xs text-gray-600">Your peace of mind matters most.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-blush/30 flex items-start space-x-4 sm:col-span-2">
+                    <div class="bg-blush/30 text-burgundy p-3 rounded-xl text-xl shrink-0">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-darkText mb-1">Pet First Aid Aware</h4>
+                        <p class="text-xs text-gray-600">Prepared with your pet's wellbeing in mind.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="py-16 bg-sageLight/30 border-y border-sage/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+                <span class="script-font text-4xl text-burgundy">Happy Pets Have Stories to Tell</span>
+                <h2 class="text-3xl font-bold text-darkText">Our furry friends deserve a little Cariad. ♥️</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                
+                <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white">
+                    <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/orangedog.jpg" alt="Happy faces" class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/E8B4B8/6E2C33?text=Happy+Faces'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-burgundy/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs font-medium">Happy faces ♥</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white">
+                    <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/dofgback1.jpg" alt="Making every walk count" class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/556B55/ffffff?text=Dog+Walk'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-burgundy/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs font-medium">Making every walk count.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white">
+                    <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/visit.jpg" alt="Little paws" class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/E8B4B8/6E2C33?text=Little+Paws'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-burgundy/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs font-medium">Little paws ♥ Extra care for growing puppies.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white">
+                    <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/cat1.jpg" alt="Because cats deserve attention too" class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/556B55/ffffff?text=Cat+Care'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-burgundy/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs font-medium">Because cats deserve attention too.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white col-span-2 md:col-span-1">
+                    <img src="https://raw.githubusercontent.com/Creativetugs/Cariad-by-Llinos/refs/heads/main/price1.jpg" alt="Lots of fuss" class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/E8B4B8/6E2C33?text=Lots+Of+Fuss'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-burgundy/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-xs font-medium">Lots of fuss ♥</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="#" class="bg-burgundy text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow hover:bg-burgundy/90 transition-all flex items-center space-x-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Follow Us on Facebook</span>
+                </a>
+                <a href="#" class="bg-burgundy text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow hover:bg-burgundy/90 transition-all flex items-center space-x-2">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Follow Us on Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-xl border border-blush/40 overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+            
+            <div class="lg:col-span-5 bg-burgundy text-white p-8 sm:p-12 flex flex-col justify-between space-y-8">
+                <div class="space-y-4">
+                    <span class="script-font text-4xl text-blushLight">Get in Touch Today ♥️</span>
+                    <h2 class="text-3xl font-bold">Let's Talk About Your Pet</h2>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Looking for a friendly local dog walker or someone to care for your cat or puppy while you're away? I'd love to hear from you.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-white/10 p-3 rounded-xl text-blushLight shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-white/60 font-medium">Phone Number</p>
+                            <a href="tel:07584954185" class="text-lg font-bold hover:text-blushLight transition-colors">07584 954185</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-white/10 p-3 rounded-xl text-blushLight shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-white/60 font-medium">Email Address</p>
+                            <a href="mailto:llinosann1981@hotmail.com" class="text-base font-bold hover:text-blushLight transition-colors">llinosann1981@hotmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-white/10 p-3 rounded-xl text-blushLight shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-white/60 font-medium">Service Area</p>
+                            <p class="text-sm font-bold">Carmarthen & surrounding areas (~10 miles)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-xs text-white/60 pt-4 border-t border-white/10">
+                    Small Business · Big Cariad ♥
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 p-8 sm:p-12">
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <h3 class="text-2xl font-bold text-darkText mb-2">Send a Message</h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl bg-cream/50 border border-blush/40 focus:outline-none focus:ring-2 focus:ring-burgundy text-sm" placeholder="e.g. Sarah Jones">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Phone Number</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-xl bg-cream/50 border border-blush/40 focus:outline-none focus:ring-2 focus:ring-burgundy text-sm" placeholder="e.g. 07123 456789">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-xl bg-cream/50 border border-blush/40 focus:outline-none focus:ring-2 focus:ring-burgundy text-sm" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Service Needed</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-cream/50 border border-blush/40 focus:outline-none focus:ring-2 focus:ring-burgundy text-sm">
+                                <option>Dog Walking</option>
+                                <option>Puppy Welfare Checks</option>
+                                <option>Cat Care</option>
+                                <option>Multiple Services / Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Your Message / Pet Details</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 rounded-xl bg-cream/50 border border-blush/40 focus:outline-none focus:ring-2 focus:ring-burgundy text-sm" placeholder="Tell me a bit about your pets and when you need care..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-burgundy text-white py-4 rounded-xl font-semibold shadow-lg hover:bg-burgundy/90 transition-all">
+                        Send Enquiry ♥
+                    </button>
+
+                    <div id="form-success" class="hidden text-center p-4 bg-sage/20 text-sage rounded-xl font-semibold text-sm">
+                        Thank you! Your message has been sent. Llinos will be in touch shortly. ♥
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-sage text-white pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <div class="space-y-4 md:col-span-2">
+                    <span class="script-font text-4xl text-blushLight">Cariad by Llinos ♥</span>
+                    <p class="text-white/80 text-sm max-w-md font-light leading-relaxed">
+                        Because every pet deserves a little extra Cariad. Professional, reliable and affectionate local pet care in Carmarthen and surrounding areas.
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm uppercase tracking-wider text-blushLight">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services & Pricing</a></li>
+                        <li><a href="#extras" class="hover:text-white transition-colors">Extras & Add-ons</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Why Choose Us</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="font-bold text-sm uppercase tracking-wider text-blushLight">Connect Online</h4>
+                    <div class="flex space-x-3 pt-1">
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="mailto:llinosann1981@hotmail.com" aria-label="Email" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="text-xs text-white/70 pt-2">Carmarthen & surrounding areas</p>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/70 space-y-4 sm:space-y-0">
+                <p>&copy; 2026 Cariad by Llinos. All rights reserved.</p>
+                <div class="flex items-center space-x-2 font-medium tracking-wide">
+                    <span>WALKS</span>
+                    <span>♥</span>
+                    <span>PLAY</span>
+                    <span>♥</span>
+                    <span>CARE</span>
+                    <span>♥</span>
+                    <span>COMPANIONSHIP</span>
+                    <span>♥</span>
+                    <span>HAPPINESS</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            const form = document.getElementById('contact-form');
+            
+            successMsg.classList.remove('hidden');
+            form.reset();
+            
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
